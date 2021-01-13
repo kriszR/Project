@@ -1,1 +1,33 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+nav {
+    box-shadow: 0px 1px 5px black ;
+}
+
+.razer-blade-bg {
+    border-radius: 50%;
+    background: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+    margin-left: auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
 
