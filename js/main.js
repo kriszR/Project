@@ -17,5 +17,6 @@ container.addEventListener("mousemove", (e) => {
 //Animate Out
 container.addEventListener("mouseleave", (e) => {
     img.style.transition = "all 0.5s ease";
+    img.style.transform = "translateZ(0px)";
     container.style.transform = `rotateY(0deg) rotateX(0deg)`;
 });
