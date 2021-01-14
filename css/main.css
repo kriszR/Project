@@ -6,32 +6,53 @@
 
 body {
     scroll-behavior: smooth;
-    perspective: 1000px;
     height: 100vh;
 }
 
+
 nav {
-    box-shadow: 0px 1px 5px black ;
+    box-shadow: 0px 1px 5px  #44d62c;
+    background-color: rgb(29, 29, 29);
 }
+
+
 
 .razer-blade-bg {
     transform-style: preserve-3d;
     border-radius: 50%;
     background-size: 600% 100%;
-    border: 4px solid transparent;
-    border-image: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);;
-    border-image-slice: 1;
-    animation: gradient 16s linear infinite;
+    background-image: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);;
+    animation: gradient 5s linear infinite;
     animation-direction: alternate;
     margin-left: auto;
+    margin-right: auto;
+}
+.inner{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.pre-order {
+    width: 200px;
+    text-align: center;
+    color:white;
+    background-color: #44d62c;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.pre-order:hover {
+    color: white;
+    background-color: #78df68 ;
 }
 
 @keyframes gradient {
     0% {
-        border-position: 0%;
+        background-position: 0%;
     }
     100% {
-        border-position: 100%;
+        background-position: 100%;
     }
 }
 
