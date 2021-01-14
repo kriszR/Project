@@ -6,6 +6,7 @@
 
 body {
     scroll-behavior: smooth;
+    perspective: 1000px;
     height: 100vh;
 }
 
@@ -14,9 +15,12 @@ nav {
 }
 
 .razer-blade-bg {
+    transform-style: preserve-3d;
     border-radius: 50%;
-    background: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
     background-size: 600% 100%;
+    border: 4px solid transparent;
+    border-image: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);;
+    border-image-slice: 1;
     animation: gradient 16s linear infinite;
     animation-direction: alternate;
     margin-left: auto;
@@ -24,10 +28,10 @@ nav {
 
 @keyframes gradient {
     0% {
-        background-position: 0%;
+        border-position: 0%;
     }
     100% {
-        background-position: 100%;
+        border-position: 100%;
     }
 }
 
