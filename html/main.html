@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm justify-content-center bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm justify-content-center navbar-dark fixed-top">
         <!--Logo-->
-        <a href="#" class="navbar-brand"><img src="../imgs/razer.svg" alt="" style="width: 100px;"></a>
+        <a href="#" class="navbar-brand ml-auto"><img src="../imgs/razer.svg" alt="" style="width: 100px;"></a>
         
         <!--Links-->
         <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#">Link 1</a>
+              <a class="nav-link text-uppercase text-white" href="#review">Review</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-uppercase" href="#">Link 2</a>
+              <a class="nav-link  text-uppercase text-white" href="#">Link 2</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-uppercase" href="#">Link 3</a>
+              <a class="nav-link  text-uppercase text-white" href="#">Link 3</a>
             </li>
         </ul>
+        <a href="https://www.razer.com/" class="ml-auto text-decoration-none mr-auto pre-order mt-0">Official Website</a>
     </nav>
-    <!--background: rgb(0,14,255);
-    ;-->
+
     <!--First block-->
-    <div class="container-fluid bg-dark d-flex justify-content-center" style="height: 100%;">
-      <div class="align-self-center" style="margin-left: auto;">
+    <div class="container-fluid bg-dark row justify-content-center m-0" style="height: 100%; background: url(../imgs/bg.png); background-repeat: no-repeat; background-size: cover;">
+      <div class="align-self-center column" style="margin-right: auto; margin-left: auto;">
         <h2 class="text-uppercase text-white">razer blade pro<sup>17</sup></h2>
-        <h3 style="color: #44d62c">Ultra-Fast. Ultra-thin. Ultra-Powerful.</h3>
-        <a target="_blank" href="https://www.razer.com/shop/pc/gaming-laptops?query=:newest:category:system-laptops:system-display:17%2Binch">Pre-Order</a>
+        <h3 style="color: #44d62c" class="mb-4">Ultra-Fast. Ultra-thin. Ultra-Powerful.</h3>
+        <a target="_blank" class="text-uppercase text-decoration-none text-center pre-order" href="https://www.razer.com/shop/pc/gaming-laptops?query=:newest:category:system-laptops:system-display:17%2Binch">Pre-Order</a>
       </div>
 
-      <div class="align-self-center razer-blade-bg">
-        <img class="razer-img" src="../imgs/Blade-Pro-1024x577.png" style="width: 700px; z-index: 1;" alt="">
+      <div class="align-self-center razer-blade-bg column">
+        <div class="pt-5 mt-5 mb-5 inner" style="background: black">
+          <img class="mt-5 razer-img" src="../imgs/Blade-Pro-1024x577.png" style="width: 500px; z-index: 1;" alt="">
+        </div>
       </div>
     </div>
 
     <!--Second block-->
-    <div class="container-fluid" style="padding:0px;">
-      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/Sql9LX1Ulng" frameborder="0"></iframe>
+    <div class="container-fluid" id="review" style="padding:0px;">
+      <iframe frameborder="0" width=100% height="620px" style="display:block;" src="https://www.youtube.com/embed/Sql9LX1Ulng"></iframe>
     </div>
 
+    <!--Third block-->
+    <div class="row h-50">
+      <div class="column h-100 w-50" style="background: url(../imgs/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_hf2_ha8_9072736698398_Razer-Blade-Pro-17-gallery-hero.jpg); background-repeat: no-repeat; background-size: cover; ">
+
+      </div>
+      <div class="column h-100 w-50 " style="background-color:black">
+        <h3 class="text-white">Specifications</h3>
+        <ul class="text-white">
+          <li>10th Gen Intel® Core™ i7-10875H 8 core (2.3GHz)</li>
+          <li> Windows 10 Home</li>
+          <li> 17.3" Full HD 300Hz, 100% sRGB, 6.0 mm bezel, factory calibrated</li>
+          <li>NVIDIA® GeForce RTX™ 2070 Max-Q</li>
+          <li>512GB PCIe NVMe</li>
+          <li>16GB of Dual-Channel DDR4</li>
+          <li>Per-key RGB powered by Razer Chroma™</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid h-25 w-100" style="background-color: rgb(29, 29, 29);">
     </div>
     <!--Script-->
     <script src="../js/main.js"></script>
