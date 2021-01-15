@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   
 </head>
-<body>
+<body style="padding: 0px;">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm justify-content-center navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm pr-0 pl-0 justify-content-center navbar-dark fixed-top mb-4 w-100">
         <!--Logo-->
         <a href="#" class="navbar-brand ml-auto"><img src="../imgs/razer.svg" alt="" style="width: 100px;"></a>
         
@@ -23,17 +23,20 @@
               <a class="nav-link text-uppercase text-white" href="#review">Review</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-uppercase text-white" href="#">Link 2</a>
+              <a class="nav-link  text-uppercase text-white" href="#specifitacions">Specifitacions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  text-uppercase text-white" href="#">Link 3</a>
+              <a class="nav-link  text-uppercase text-white" href="#screen">Screen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-uppercase text-white" href="#aboutus">About Us</a>
             </li>
         </ul>
         <a href="https://www.razer.com/" class="ml-auto text-decoration-none mr-auto pre-order mt-0">Official Website</a>
     </nav>
 
     <!--First block-->
-    <div class="container-fluid bg-dark row justify-content-center m-0" style="height: 100%; background: url(../imgs/bg.png); background-repeat: no-repeat; background-size: cover;">
+    <div class="container-fluid h-100 bg-dark row justify-content-center m-0 pt-5 mt-2" style="background: url(../imgs/bg.png); background-repeat: no-repeat; background-size: cover;">
       <div class="align-self-center column" style="margin-right: auto; margin-left: auto;">
         <h2 class="text-uppercase text-white">razer blade pro<sup>17</sup></h2>
         <h3 style="color: #44d62c" class="mb-4">Ultra-Fast. Ultra-thin. Ultra-Powerful.</h3>
@@ -41,7 +44,9 @@
       </div>
 
       <div class="align-self-center razer-blade-bg column">
+
         <div class="pt-5 mt-5 mb-5 inner" style="background: black">
+          <h3 style="text-align: center; color: #44d62c;">Put your cursor here!</h3>
           <img class="mt-5 razer-img" src="../imgs/Blade-Pro-1024x577.png" style="width: 500px; z-index: 1;" alt="">
         </div>
       </div>
@@ -53,11 +58,11 @@
     </div>
 
     <!--Third block-->
-    <div class="row h-50">
-      <div class="column h-100 w-50" style="background: url(../imgs/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_hf2_ha8_9072736698398_Razer-Blade-Pro-17-gallery-hero.jpg); background-repeat: no-repeat; background-size: cover; ">
+    <div class="row h-50 w-100 m-0">
+      <div class="column h-100 w-50" id="specifitacions" style="background: url(../imgs/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_hf2_ha8_9072736698398_Razer-Blade-Pro-17-gallery-hero.jpg); background-repeat: no-repeat; background-size: cover; ">
 
       </div>
-      <div class="column h-100 w-50 " style="background-color:black">
+      <div class="column h-100 w-50 pt-5 pl-5" style="background-color:black">
         <h3 class="text-white">Specifications</h3>
         <ul class="text-white">
           <li>10th Gen Intel® Core™ i7-10875H 8 core (2.3GHz)</li>
@@ -71,8 +76,50 @@
       </div>
     </div>
 
+    <!--Fourth block-->
+    <div class="row h-100 w-100 pt-4" id="screen" style="background: url(../imgs/blade15.jpg); background-repeat: no-repeat; background-size: cover; margin: 0px; padding: 0px">
+        <div class="column h-40 w-100 justify-content-center" style="margin: 0px;  text-align: center;">
+          <h2 style="color: white;">Crisp, Competitive Gaming – FHD 360 Hz</h2>
+          <h6 style="color: grey; margin-top: 30px;">In competitive games where a split-second advantage is crucial to coming out on top, gain a distinct edge with an ultra-high refresh rate for buttery-smooth gameplay.</h6>
+        </div>
+        <div class="col-md-6 h-30 w-50 justify-content-center" style="color: white; text-align: center;">
+          <p style="font-size: 30px;"><b>Advanced Model</b></p>
+          <p>FHD 360 Hz</p>
+          <p>2ms response</p>
+          <p>Up to 100% sRGB</p>
+        </div>
+        <div class="col-md-6 h-30 w-50 justify-content-center" style="color: white; text-align: center;">
+          <p style="font-size: 30px;"><b>Base Model</b></p>
+            <p>FHD 144 Hz</p>
+            <p>8ms response</p>
+            <p>Up to 100% sRGB</p>
+        </div>
+        <div class="col-md h-20" style="text-align: right; margin-right: 40px;">
+          <p><a href="https://www.razer.com/gaming-laptops/razer-blade" style="color: green"><b>Learn more ></b></a></p>
+        </div>
+    </div>
+
     <!--Footer-->
-    <div class="container-fluid h-25 w-100" style="background-color: rgb(29, 29, 29);">
+    <div class="container-fluid text-white p-2" id="aboutus" style="background-color: rgb(29, 29, 29);">
+      <div class="col w-50  ml-auto mr-auto">
+        <div class="row">
+          <p><b class="mr-3">Company</b></p>
+          <p><a href="https://www.razer.com/about-razer" style="color: black;"> About Us </a>|</p>
+          <p><a href="https://www.razer.com/contact-us" style="color: black;"> Contact Us </a>| </p>
+          <p><a href="https://investor.razer.com/html/index.php" style="color: black;"> Investor Relations </a>|</p>
+        </div>
+        <div class="row">
+          <p><b class="mr-3">Shop</b></p>
+          <p><a href="https://www.razer.com/store-finder" style="color: black;"> Store Locator </a>|</p>
+          <p><a href="https://www.razer.com/store/programs" style="color: black;"> Razer.com Purchase Programs </a>|</p>
+          <p><a href="https://www.razer.com/exclusives" style="color: black;"> Exclusives </a>|</p>
+        </div>
+        <div class="row">
+          <p><b class="mr-3">Razer.com</b></p>
+          <p>Copyright © 2021 Razer Inc. All rights reserved.</p>
+          <p><a href="https://www.razer.com/legal/customer-privacy-policy/" style="color: black;"> Privacy Policy</a>|</p>
+        </div>
+      </div>
     </div>
     <!--Script-->
     <script src="../js/main.js"></script>
